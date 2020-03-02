@@ -1,0 +1,5 @@
+.BookShelf {
+  width: 100%;
+  display: grid;
+  grid: auto-flow / 1fr 1fr 1fr;
+}

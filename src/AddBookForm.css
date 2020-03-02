@@ -1,0 +1,44 @@
+.Add-book form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  align-items: center;
+  font-size: 1.4rem;
+  line-height: 1.5rem;
+}
+
+.Add-book input {
+  margin-bottom: 20px;
+}
+
+.Add-book input[type='text'],
+input[type='number'] {
+  width: 100%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.Add-book input[type='checkbox'] {
+  vertical-align: text-top;
+  display: inline-block;
+  -ms-transform: scale(1.5); /* IE */
+  -moz-transform: scale(1.5); /* FF */
+  -webkit-transform: scale(1.5); /* Safari and Chrome */
+  -o-transform: scale(1.5); /* Opera */
+  transform: scale(1.5);
+  margin-right: 0.75rem;
+  vertical-align: 0.4em;
+}
+
+.Add-book label {
+  margin-right: 10px;
+  color: white;
+  display: inline-block;
+}
+
+.Add-book button[type='submit'] {
+  margin-right: 1rem;
+}
