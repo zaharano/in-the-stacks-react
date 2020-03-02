@@ -1,5 +1,7 @@
 Created as part of [The Odin Project](https://www.theodinproject.com/dashboard) curriculum.
 
+See it [live](https://zaharano.github.io/in-the-stacks-react/).
+
 This is a refactor of my vanilla JS [myLibrary](https://github.com/zaharano/InTheStacks) app into React, as a way to learn some of the basics of React. 
 
 **Todo:**
