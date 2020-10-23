@@ -31,13 +31,11 @@ class App extends Component {
       },
     ]);
     this.setState({ library });
-    setTimeout(this.libUpdate, 200);
   };
 
   removeBook = id => {
     for (const [i, book] of this.state.library.entries()) {
       if (book.id === id) {
-        console.log('matched');
         const library = this.state.library
           .slice(0, i)
           .concat(this.state.library.slice(i + 1));
@@ -45,7 +43,6 @@ class App extends Component {
         break;
       }
     }
-    setTimeout(this.libUpdate, 200);
   };
 
   toggleRead = id => {
@@ -59,11 +56,6 @@ class App extends Component {
       });
       return { library };
     });
-    setTimeout(this.libUpdate, 200);
-  };
-
-  libUpdate = () => {
-    localStorage.setItem('myLibrary', JSON.stringify(this.state.library));
   };
 
   showModal = () => {
@@ -73,6 +65,10 @@ class App extends Component {
   hideModal = () => {
     this.setState({ showForm: false });
   };
+
+  componentDidUpdate() {
+    localStorage.setItem('myLibrary', JSON.stringify(this.state.library));
+  }
 
   render() {
     return (
@@ -110,9 +106,3 @@ class App extends Component {
 }
 
 export default App;
-
-// {/* <div class="container">
-//       <h1>&nbsp; My Library &nbsp;</h1>
-//       <button id="add-book">Add a Book</button>
-//       <div id="book-container"></div>
-//     </div> */}

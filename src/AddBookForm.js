@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './AddBookForm.css';
 
-// have to add requirements - can't rely on HTML required in React it seems
+// have to add requirements - can't rely on "required" in React it seems
 
 class AddBookForm extends Component {
   state = {
@@ -50,7 +50,7 @@ class AddBookForm extends Component {
             name="title"
             placeholder="Title"
             value={this.state.title}
-            required
+            required="true"
             onChange={this.handleChange}
           />
           <input
@@ -58,7 +58,7 @@ class AddBookForm extends Component {
             name="author"
             placeholder="Author"
             value={this.state.author}
-            required
+            required="true"
             onChange={this.handleChange}
           />
           <input
