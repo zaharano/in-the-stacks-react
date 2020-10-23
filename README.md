@@ -8,8 +8,10 @@ This is a refactor of my vanilla JS [myLibrary](https://github.com/zaharano/InTh
 - [ ] Form validation (simply get require working again, really)
 - [ ] Click outside of modal closes modal
 - [x] I'm using setTimeout to save to localstorage so that it doesn't happen before setState finishes. Is this hackey or fine? Just save the temp new 'library' before setState? Learn about best practices. (componentDidUpdate()!)
+- [ ] I'm using setTimeout to save to localstorage so that it doesn't happen before setState finishes. Is this hackey or fine? Just save the temp new 'library' before setState? Learn about best practices. *componentDidUpdate*
 - [ ] Focus title input on form open
-- [ ] Learn about the accessibility issues - fix
+- [ ] Learn about the accessibility issues - fix - divs are not buttons
+- [ ] Add animations
 
 **Want to take it further?**
 * [ ] Implement Firebase instead of localstorage
